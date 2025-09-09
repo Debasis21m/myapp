@@ -5,7 +5,6 @@ import { useState } from 'react';
 import About from './components/About';
 import { BrowserRouter as Router,
   Routes,
-  Link,
   Route } from 'react-router-dom';
 
 function App() {
@@ -25,6 +24,9 @@ function App() {
   }
   return (
 <>
+{/* <Navbar title="MyNav" toggle={toggle} mode={mode} color={color}/>
+<Form/>
+<About/> */}
   <Router>
     <Navbar title="MyNav" toggle={toggle} mode={mode} color={color}/>
   <Routes>
