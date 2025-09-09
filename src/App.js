@@ -24,16 +24,16 @@ function App() {
   }
   return (
 <>
-{/* <Navbar title="MyNav" toggle={toggle} mode={mode} color={color}/>
+<Navbar title="MyNav" toggle={toggle} mode={mode} color={color}/>
 <Form/>
-<About/> */}
-  <Router>
+<About/>
+  {/* <Router>
     <Navbar title="MyNav" toggle={toggle} mode={mode} color={color}/>
   <Routes>
     <Route path="/" element={<Form />} />
     <Route path="/about" element={<About />} />
   </Routes>
-  </Router>
+  </Router> */}
 </>
   );
 }
