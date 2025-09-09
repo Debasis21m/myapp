@@ -3,9 +3,9 @@ import Navbar from './components/Navbar';
 import Form from './components/Form';
 import { useState } from 'react';
 import About from './components/About';
-import { BrowserRouter as Router,
-  Routes,
-  Route } from 'react-router-dom';
+// import { BrowserRouter as Router,
+//   Routes,
+//   Route } from 'react-router-dom';
 
 function App() {
   let [mode, setMode] = useState("light");
