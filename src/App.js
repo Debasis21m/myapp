@@ -3,9 +3,9 @@ import Navbar from './components/Navbar';
 import Form from './components/Form';
 import { useState } from 'react';
 import About from './components/About';
-// import { BrowserRouter as Router,
-//   Routes,
-//   Route } from 'react-router-dom';
+import { HashRouter as Router,
+  Routes,
+  Route } from 'react-router-dom';
 
 function App() {
   let [mode, setMode] = useState("light");
@@ -24,16 +24,16 @@ function App() {
   }
   return (
 <>
-<Navbar title="MyNav" toggle={toggle} mode={mode} color={color}/>
+{/* <Navbar title="MyNav" toggle={toggle} mode={mode} color={color}/>
 <Form/>
-<About/>
-  {/* <Router>
+<About/> */}
+  <Router>
     <Navbar title="MyNav" toggle={toggle} mode={mode} color={color}/>
   <Routes>
     <Route path="/" element={<Form />} />
     <Route path="/about" element={<About />} />
   </Routes>
-  </Router> */}
+  </Router>
 </>
   );
 }
